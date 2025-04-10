@@ -2,10 +2,13 @@ package at.luca.games.firstgame;
 
 import org.newdawn.slick.*;
 
+import java.util.List;
+
 public class ObjectsGame extends BasicGame {
 
     private Rectangle rectangle;
     private Rectangle rectangle2;
+    private List<Rectangle> rectangles;
 
 
     public ObjectsGame(String title) {
