@@ -2,7 +2,7 @@ package at.luca.games.firstgame;
 
 import org.newdawn.slick.Graphics;
 
-public class Rectangle {
+public class Rectangle implements Actor{
     private float x;
     private float y;
     private float speed;
@@ -21,7 +21,8 @@ public class Rectangle {
     public void update(int delta){
         this.x += (float)delta/this.speed;
         if(this.x > 800) {
-            this.x = 800;
+            this.x = 0;
         }
+
     }
 }
