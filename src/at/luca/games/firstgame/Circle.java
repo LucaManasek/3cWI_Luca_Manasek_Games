@@ -8,7 +8,7 @@ public class Circle implements Actor{
 
     private float x,y;
     private float speed;
-    private int diameter;
+    private float diameter;
 
     public void render(Graphics graphics){
         graphics.drawOval(this.x, this.y, this.diameter,this.diameter);
@@ -19,6 +19,7 @@ public class Circle implements Actor{
         if(this.y > 600) {
             this.y = 0;
         }
+        this.diameter+= 0.04F;
 
     }
 

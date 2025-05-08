@@ -19,10 +19,11 @@ public class Rectangle implements Actor{
     }
 
     public void update(int delta){
-        this.x += (float)delta/this.speed;
+            this.x += (float)delta/this.speed;
         if(this.x > 800) {
             this.x = 0;
+        } else if (this.x < 0) {
+            this.x = 800;
         }
-
     }
 }
