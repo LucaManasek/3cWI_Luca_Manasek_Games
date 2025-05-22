@@ -8,9 +8,6 @@ import java.util.List;
 import java.util.Random;
 
 public class ObjectsGame extends BasicGame {
-
-    private Rectangle rectangle;
-    private Rectangle rectangle2;
     private List<Actor> actors;
 
 
